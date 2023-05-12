@@ -1,0 +1,55 @@
+div.boton{
+    position: relative;
+    left: auto;
+    margin: auto;
+    top: 100px;
+    width: 750px;
+    height: 600px;
+    color: rgb(245, 245, 245);
+    background-color: black;
+    font-size: 50px;
+}
+.boton::first-letter{
+    font-size: 100px;
+
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+
+}
+.button{
+    position:absolute;
+    top: 500px;
+    left: 280px;
+    padding:20px;
+    margin:20px;
+    border-radius: 5px;
+    color: blue;
+    background-color: brown;
+}
+.button::before{
+    content: "Pasa por encima";
+    
+}
+
+.button:hover{
+background-color: green;
+color: white;
+opacity:0.7;
+}
+
+button:hover::before{
+    content:'';
+}
+
+.button::after{   
+    content:'Hecho';
+    display: none;
+}
+
+.button:hover::after{   
+    content:'Hecho';
+    display: block;
+}
